@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.all-header {
+    background: #FFF8F3;
+    background-image: url(../images/header_bg.png), url(../images/developer.png);
+    background-repeat: no-repeat;
+    background-position: bottom right, left;
+    background-size: contain;
+    /* position: absolute;
+    top: 0; */
+    height: 45rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: .5rem 9rem;
+    align-items: center;
+    /* margin-top: .5rem; */
+}
+
+.header ul,
+.btn {
+
+    display: flex;
+
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.orange {
+    color: #FD6E0A;
+}
+
+.header ul li {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 9px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.header h2 {
+    font-size: 2rem;
+}
+
+.btn {
+    height: 2rem;
+    width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 450;
+    color: #fff;
+    background-color: #FD6E0A;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* ====================== */
+.all-img {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 9rem;
+
+    /* padding: 12rem; */
+}
+
+.all-text .btn {
+    width: 6.1rem;
+    height: 2.3rem;
+    margin-top: 1rem;
+}
+
+.text {
+    margin-top: .8rem;
+}
+
+.all-text h1 {
+    margin-top: .8rem;
+}
+
+/* =================== */
+main {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.about {
+    text-align: center;
+    margin-top: 130px;
+    background: #FFF8F3;
+    border-radius: 10px;
+    padding: 130px 150px;
+}
+
+.section-title {
+    
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 35px;
+}
+.text-description{
+    color: #757575;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.info{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: .5rem;
+    font-size: 20px;
+}
