@@ -9,20 +9,12 @@
     background-image: url(../images/header_bg.png), url(../images/developer.png);
     background-repeat: no-repeat;
     background-position: bottom right, left;
-    background-size: contain;
-    /* position: absolute;
-    top: 0; */
-    height: 45rem;
-}
-section{
-    margin-top: 130px;
 }
 .header {
     display: flex;
     justify-content: space-between;
     padding: .5rem 9rem;
     align-items: center;
-    /* margin-top: .5rem; */
 }
 
 .header ul,
@@ -75,11 +67,8 @@ section{
 /* ====================== */
 .all-img {
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
     margin: 0 9rem;
-
-    /* padding: 12rem; */
 }
 
 .all-text .btn {
@@ -128,21 +117,22 @@ main {
     margin-top: .5rem;
     font-size: 20px;
 }
+.info-description{
+    margin: 0 20px;
+}
+
+/* ========================= */
 .skills-container{
     display: flex;
     gap: 24px;
 }
-/* .skills-container .skill{
-    height: 12rem;
-    width: 12rem;
-} */
 .skill-title{
     text-align: center;
     font-weight: 700;
     font-size: 20px;
     margin-top: 30px;
     margin-bottom: 20px;
-}
+} 
 .skill{
     background: #FFFFFF;
     box-shadow: 0 6px 50px rgba(0,0,0,0.06);
@@ -196,9 +186,7 @@ main {
 .contact .section-title{
     text-align: left;
 }
-.contact input, textarea{
-    
-}
+
 .contact input[type="text"], input[type="email"], textarea{
     margin-bottom: 24px;
     border: none;
@@ -225,3 +213,68 @@ main {
 .contact img ,a{
     font-size: 1rem;
 }
+
+/* ============================ */
+
+@media screen and (max-width:576px) {
+    .info{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .about,
+    .skills-container,
+     .resume-content,
+     .contact
+     {
+        padding:20px;
+    }
+    .what-i-do, .resume, .contact{
+        margin-top: 2rem;
+    }
+    .what-i-do .skills-container, .resume-content, .all-img{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact input[type="text"], input[type="email"], textarea{
+        padding: 0;
+    }
+    .contact{
+        flex-direction: column;
+    }
+    .all-img{
+        margin: 20px;
+    }
+    .all-img img{
+        width: 100%;
+    }
+    .header{
+        padding: 20px;
+        flex-direction: column;
+        gap: 6px;
+    }
+    .all-header{
+        background-image: none;
+    }
+}
+@media screen and (min-width:577px) and (max-width:992px) {
+    .about,
+    .skills-container,
+     .resume-content,
+     .contact
+     {
+        padding:20px;
+    }
+    .contact input[type="text"], input[type="email"], textarea{
+        padding: 0;
+    }
+    .section-title{
+        font-size: 27px;
+    }
+    .all-img{
+        margin: 0 29px;
+    }
+}
+
+
+
